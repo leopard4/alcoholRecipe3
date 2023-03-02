@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.fragment.app.Fragment;
 
@@ -22,6 +24,9 @@ public class ThirdFragment extends Fragment {
     // TODO: 매개변수 이름 바꾸기 및 유형 변경
     private String mParam1;
     private String mParam2;
+
+    Button btnMyToast, btnMyRecipe, btnLogout, btnLisence, btnSecession, btnEdit;
+    EditText editName;
 
     public ThirdFragment() {
         // 필수 빈 공개 생성자
@@ -58,6 +63,16 @@ public class ThirdFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // 이 조각의 레이아웃 확장
-        return inflater.inflate(R.layout.fragment_third, container, false);
+        View view = inflater.inflate(R.layout.fragment_third, container, false);
+
+        btnMyToast = view.findViewById(R.id.btnMyToast);
+        btnMyRecipe = view.findViewById(R.id.btnMyRecipe);
+        btnLogout = view.findViewById(R.id.btnLogout);
+        btnLisence = view.findViewById(R.id.btnLisence);
+        btnSecession = view.findViewById(R.id.btnSecession);
+        btnEdit = view.findViewById(R.id.btnEdit);
+        editName = view.findViewById(R.id.editName);
+
+        return view;
     }
 }

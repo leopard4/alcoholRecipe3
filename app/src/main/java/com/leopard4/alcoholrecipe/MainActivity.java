@@ -60,16 +60,17 @@ public class MainActivity extends AppCompatActivity {
                     getSupportActionBar().setTitle("홈");
                 } else if(itemId == R.id.secondFragment) {
                     fragment = secondFragment;
-                    getSupportActionBar().setTitle("포스팅");
+                    getSupportActionBar().setTitle("즐겨찾기");
                 } else {
                     fragment = thirdFragment;
-                    getSupportActionBar().setTitle("설정");
+                    getSupportActionBar().setTitle("마이 페이지");
                 }
                 return loadFragment(fragment);
             }
         });
 
     }
+    // 탭바를 누르면 동작하는 코드
     private boolean loadFragment(Fragment fragment) {
         if(fragment != null) {
             getSupportFragmentManager()

@@ -20,8 +20,44 @@
         android:theme="@style/Theme.AlcoholRecipe"
         android:usesCleartextTraffic="true"
         tools:targetApi="33">
-
-        <activity android:name=".LoginActivity"
+        <activity
+            android:name=".RegisterInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PreKakaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OwnerRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DogamInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DogamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GameDiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GameFaceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GameToastMakerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GameToastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecipeInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"

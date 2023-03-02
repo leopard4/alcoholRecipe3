@@ -14,7 +14,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.leopard4.alcoholrecipe.api.NetworkClient;
-import com.leopard4.alcoholrecipe.api.NetworkClient;
 import com.leopard4.alcoholrecipe.api.UserApi;
 import com.leopard4.alcoholrecipe.config.Config;
 import com.leopard4.alcoholrecipe.model.User;
@@ -42,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
 
         editEmail = findViewById(R.id.editEmail);
         editPassword = findViewById(R.id.editPassword);
-        btnLogin = findViewById(R.id.btnLogin);
+        btnLogin = findViewById(R.id.btnOk);
         txtRegister = findViewById(R.id.txtRegister);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
